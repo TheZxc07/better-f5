@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "better-f5",
+	"version": "${version}",
+	"name": "Better F5",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/better-f5/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.thezxc07.betterf5.BetterF5"
+		],
+		"client": [
+			"com.thezxc07.betterf5.BetterF5Client"
+		]
+	},
+	"mixins": [
+		"better-f5.mixins.json",
+		{
+			"config": "better-f5.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
