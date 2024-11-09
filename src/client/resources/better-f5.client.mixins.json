@@ -3,7 +3,10 @@
 	"package": "com.thezxc07.betterf5.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"CameraMixin"
+		"CameraMixin",
+		"CameraAccessor",
+		"SoundSystemMixin",
+		"SoundListenerAccessor"
 	],
 	"injectors": {
 		"defaultRequire": 1
